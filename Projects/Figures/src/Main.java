@@ -12,5 +12,7 @@ public class Main {
         Square.draw(r.nextInt(20)+2);
         System.out.println("\n\n");
         Triangle.draw(r.nextInt(20)+2);
+        System.out.println("\n\n");
+        EquilateralTriangle.draw(r.nextInt(20)+2);
     }
 }
