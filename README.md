@@ -6,9 +6,15 @@
 
 ## Projects
 #### Task 1:
- * [Figures](https://github.com/blacksempai/JavaExternal/tree/master/Projects/Figures)
- * [Guessing game](#)
- * [Figures with MVC pattern](#)
+* [Poem](https://github.com/blacksempai/JavaExternal/blob/master/poem.txt)
+* [Figures](https://github.com/blacksempai/JavaExternal/tree/master/Projects/Figures)
+
+#### Task 2:
+* [Guessing game](https://github.com/blacksempai/JavaExternal/tree/master/Projects/GuessingGame)
+
+#### Task 3:
+* [Figures with MVC pattern](#)
+* [Droid WAR](#)
 
 ## About
 Repository for java external courses.
