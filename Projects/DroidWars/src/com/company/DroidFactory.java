@@ -11,7 +11,7 @@ public class DroidFactory {
                 droid = new Droid(20,10,70,"slowpoke");
                 break;
             case SPEEDY:
-                droid = new Droid(15,70,15,"speedy");
+                droid = new SpeedyDroid(15,70,15,"speedy");
                 break;
             case ONEPUNCH:
                 droid = new OnePunchDroid(49,49,1, "OnePunchDroid");
