@@ -14,7 +14,7 @@
 
 #### Task 3:
 * [Figures with MVC pattern](#)
-* [Droid WAR](#)
+* [Droid WAR](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
 
 ## About
 Repository for java external courses.

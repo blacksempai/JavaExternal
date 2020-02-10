@@ -1,10 +1,21 @@
+/** @author: Radomyr Mykolenko*/
 package com.company;
 
 public class Droid {
     private int strength;
     private int velocity;
     private int batteryLife;
-    private String droidType;
+    private String droidName;
+
+    public Droid(int strength, int velocity, int batteryLife, String droidName) {
+        this.strength = strength;
+        this.velocity = velocity;
+        this.batteryLife = batteryLife;
+        this.droidName = droidName;
+    }
+
+    public Droid() {
+    }
 
     public void setStrength(int strength) {
         this.strength = strength;
@@ -18,9 +29,7 @@ public class Droid {
         this.batteryLife = batteryLife;
     }
 
-    public void setDroidType(String droidType) {
-        this.droidType = droidType;
-    }
+    public void setDroidName(String droidName) { this.droidName = droidName; }
 
     public int getStrength() {
         return strength;
@@ -34,32 +43,12 @@ public class Droid {
         return batteryLife;
     }
 
-    public String getDroidType() {
-        return droidType;
+    public String getDroidName() {
+        return droidName;
     }
 
-    public Droid(String name) {
-        switch (name){
-            case "slowpoke":{
-                this.droidType = "slowpoke";
-                this.strength = 20;
-                this.velocity = 10;
-                this.batteryLife = 70;
-            };
-            case "speedy":{
-                this.droidType = "speedy";
-                this.strength = 15;
-                this.velocity = 70;
-                this.batteryLife = 15;
-            }
-            /*default:{
-                System.out.println("Warning! Such type of droid doesn't exist");
-            }*/
-        }
-
-    }
     public void displayInfo(){
-        System.out.println("Droid type is:" + this.getDroidType());
+        System.out.println("Droid name is:" + this.getDroidName());
         System.out.println("Strength: " + this.getStrength());
         System.out.println("Velocity: " + this.getVelocity());
         System.out.println("Battery Life: " + this.getBatteryLife());
