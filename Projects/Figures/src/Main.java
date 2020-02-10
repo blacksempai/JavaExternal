@@ -14,5 +14,7 @@ public class Main {
         Triangle.draw(r.nextInt(20)+2);
         System.out.println("\n\n");
         EquilateralTriangle.draw(r.nextInt(20)+2);
+        System.out.println("\n\n");
+        Romb.draw(r.nextInt(20)+3);
     }
 }
