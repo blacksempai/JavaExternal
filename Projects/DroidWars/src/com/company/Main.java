@@ -18,7 +18,7 @@ public class Main {
         //Revenge!!!
         battle.warOfTwoDroids(a,b);
         //Давайте домовимося для чесної гри і епічності код тільки ДОПИСУВАТИ, а не переписувати;
-
+        battle.warOfTwoDroids(factory.getDroid(DroidTypes.SPEEDY),factory.getDroid(DroidTypes.ONEPUNCH));
 
     }
 }
