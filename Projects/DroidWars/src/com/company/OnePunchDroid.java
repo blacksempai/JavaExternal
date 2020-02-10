@@ -2,11 +2,11 @@
 package com.company;
 
 public class OnePunchDroid extends Droid {
-    public OnePunchDroid(int strength, int velocity, int batteryLife, String droidName) {
-        super(strength, velocity, batteryLife, droidName);
+    public OnePunchDroid() {
         this.setStrength(98);
         this.setVelocity(1);
         this.setBatteryLife(1);
+        this.setDroidName("OnePunchDroid");
     }
 
     public void lifeSteal(Droid a){
