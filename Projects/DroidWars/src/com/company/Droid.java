@@ -14,6 +14,9 @@ public class Droid {
         this.droidName = droidName;
     }
 
+    public Droid() {
+    }
+
     public void setStrength(int strength) {
         this.strength = strength;
     }

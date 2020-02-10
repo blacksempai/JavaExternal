@@ -5,5 +5,6 @@ public enum DroidTypes {
     SLOWPOKE,
     SPEEDY,
     ONEPUNCH,
-    RANDOM
+    RANDOM,
+    TANKY
 }

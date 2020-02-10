@@ -19,6 +19,9 @@ public class DroidFactory {
             case RANDOM:
                 droid = new RandomDroid(33,34,33, "RandomDroid");
                 break;
+            case TANKY :
+                droid = new TankyDroid();
+                break;
             default:
                 throw new IllegalArgumentException("Wrong Droid type:" + type);
         }

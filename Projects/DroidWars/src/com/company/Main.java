@@ -13,9 +13,12 @@ public class Main {
         Droid a = factory.getDroid(DroidTypes.SPEEDY);
         OnePunchDroid b = (OnePunchDroid) factory.getDroid(DroidTypes.ONEPUNCH);
         b.speedSteal(a);
+        battle.warOfTwoDroids(factory.getDroid(DroidTypes.TANKY),factory.getDroid(DroidTypes.ONEPUNCH));
 
         //Revenge!!!
         battle.warOfTwoDroids(a,b);
         //Давайте домовимося для чесної гри і епічності код тільки ДОПИСУВАТИ, а не переписувати;
+
+
     }
 }

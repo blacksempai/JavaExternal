@@ -18,13 +18,13 @@ public class Battle {
 
         if (batteryLifeDelta > 0){
             scoreDroid1++;
-        } else if (strengthDelta < 0){
+        } else if (batteryLifeDelta < 0){
             scoreDroid2++;
         }
 
         if (velocityDelta > 0){
             scoreDroid1++;
-        } else if (strengthDelta < 0){
+        } else if (velocityDelta < 0){
             scoreDroid2++;
         }
 
