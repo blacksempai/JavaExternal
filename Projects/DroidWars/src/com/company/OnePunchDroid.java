@@ -3,10 +3,10 @@ package com.company;
 
 public class OnePunchDroid extends Droid {
     public OnePunchDroid() {
-        this.setStrength(98);
-        this.setVelocity(1);
-        this.setBatteryLife(1);
-        this.setDroidName("OnePunchDroid");
+        this.strength = 98;
+        this.velocity = 1;
+        this.batteryLife = 1;
+        this.droidName = "OnePunchDroid";
     }
 
     public void lifeSteal(Droid a){
