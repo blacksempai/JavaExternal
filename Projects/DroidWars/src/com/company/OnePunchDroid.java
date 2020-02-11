@@ -10,12 +10,12 @@ public class OnePunchDroid extends Droid {
     }
 
     public void lifeSteal(Droid a){
-        this.setBatteryLife(a.getBatteryLife());
+        this.batteryLife = a.getBatteryLife();
         a.setBatteryLife(1);
     }
 
     public void speedSteal(Droid a){
-        this.setVelocity(a.getVelocity());
+        this.velocity = a.getVelocity();
         a.setVelocity(1);
     }
 }
