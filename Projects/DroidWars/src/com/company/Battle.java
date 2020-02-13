@@ -3,7 +3,7 @@
 package com.company;
 
 public class Battle {
-    public void warOfTwoDroids(Droid droid1, Droid droid2){
+    public boolean warOfTwoDroids(Droid droid1, Droid droid2){
         int strengthDelta = droid1.getStrength() - droid2.getStrength();
         int batteryLifeDelta = droid1.getBatteryLife() - droid2.getBatteryLife();
         int velocityDelta = droid1.getVelocity() - droid2.getVelocity();
@@ -29,16 +29,7 @@ public class Battle {
         }
 
         // отримання результату
-        if (scoreDroid1>scoreDroid2){
-            System.out.println("The winner of war between of droid " + droid1.getDroidName() +
-                    " and droid " + droid2.getDroidName() + " is the: \n" + droid1.getDroidName() + " !!! Congratulations!" );
-        } else if (scoreDroid1<scoreDroid2){
-                System.out.println("The winner of war between of droid " + droid1.getDroidName() +
-                        " and droid " + droid2.getDroidName() + " is the: \n" + droid2.getDroidName() + " !!! Congratulations!" );
-            } else {
-            System.out.println("There is not a winner in the war between droids " + droid1.getDroidName() + " and " +
-                    droid2.getDroidName() +", please try again!");
-            }
+        return scoreDroid1>scoreDroid2;
         }
     }
 

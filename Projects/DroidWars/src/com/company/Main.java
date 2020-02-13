@@ -2,10 +2,13 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        DroidFactory factory = new DroidFactory();
-        Battle battle = new Battle();
+        DroidModel model = new DroidModel();
+        DroidConsoleView view = new DroidConsoleView();
+        DroidController controller = new DroidController(model,view);
 
-        //Згоден можна було простіше реалізувати 😅;
+        controller.droidGame();
+
+       /** OLD EPIC BATTLE
         battle.warOfTwoDroids(factory.getDroid(DroidTypes.ONEPUNCH),factory.getDroid(DroidTypes.SLOWPOKE));
         battle.warOfTwoDroids(factory.getDroid(DroidTypes.RANDOM),factory.getDroid(DroidTypes.SPEEDY));
         battle.warOfTwoDroids(factory.getDroid(DroidTypes.SLOWPOKE),factory.getDroid(DroidTypes.RANDOM));
@@ -19,6 +22,6 @@ public class Main {
         battle.warOfTwoDroids(a,b);
         //Давайте домовимося для чесної гри і епічності код тільки ДОПИСУВАТИ, а не переписувати;
         battle.warOfTwoDroids(factory.getDroid(DroidTypes.SPEEDY),factory.getDroid(DroidTypes.ONEPUNCH));
-
+        */
     }
 }

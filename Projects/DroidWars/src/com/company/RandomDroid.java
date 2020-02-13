@@ -6,8 +6,11 @@ import java.util.Random;
 public class RandomDroid extends Droid {
     Random randomEngine = new Random();
 
-    public RandomDroid(int strength, int velocity, int batteryLife, String droidName) {
-        super(strength, velocity, batteryLife, droidName);
+    public RandomDroid() {
+        this.setStrength(33);
+        this.setVelocity(34);
+        this.setBatteryLife(33);
+        this.setDroidName("RandomDroid");
     }
 
     @Override

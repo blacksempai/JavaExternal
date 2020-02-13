@@ -3,19 +3,19 @@ package com.company;
 
 public class OnePunchDroid extends Droid {
     public OnePunchDroid() {
-        this.strength = 98;
-        this.velocity = 1;
-        this.batteryLife = 1;
-        this.droidName = "OnePunchDroid";
+        this.setStrength(98);
+        this.setVelocity(1);
+        this.setBatteryLife(1);
+        this.setDroidName("OnePunchDroid");
     }
 
     public void lifeSteal(Droid a){
-        this.batteryLife = a.getBatteryLife();
+        this.setBatteryLife(a.getBatteryLife());
         a.setBatteryLife(1);
     }
 
     public void speedSteal(Droid a){
-        this.velocity = a.getVelocity();
+        this.setVelocity(a.getVelocity());
         a.setVelocity(1);
     }
 }
