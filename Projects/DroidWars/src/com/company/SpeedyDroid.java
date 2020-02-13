@@ -2,11 +2,11 @@
 package com.company;
 
 public class SpeedyDroid extends Droid {
-    public SpeedyDroid(int strength, int velocity, int batteryLife, String droidName) {
-        super(strength, velocity, batteryLife, droidName);
+    public SpeedyDroid() {
         this.setStrength(10);
         this.setVelocity(80);
         this.setBatteryLife(10);
+        this.setDroidName("speedy");
     }
 
     @Override

@@ -11,13 +11,13 @@ public class DroidFactory {
                 droid = new Droid(20,10,70,"slowpoke");
                 break;
             case SPEEDY:
-                droid = new SpeedyDroid(15,70,15,"speedy");
+                droid = new SpeedyDroid();
                 break;
             case ONEPUNCH:
-                droid = new OnePunchDroid(49,49,1, "OnePunchDroid");
+                droid = new OnePunchDroid();
                 break;
             case RANDOM:
-                droid = new RandomDroid(33,34,33, "RandomDroid");
+                droid = new RandomDroid();
                 break;
             case TANKY :
                 droid = new TankyDroid();
