@@ -1,3 +1,4 @@
+/** @author: Andriy Moskalenko */
 package com.company;
 
 public class DroidModel {
