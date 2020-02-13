@@ -1,3 +1,4 @@
+/** @author: Andriy Moskalenko */
 package com.company;
 
 import java.io.BufferedReader;

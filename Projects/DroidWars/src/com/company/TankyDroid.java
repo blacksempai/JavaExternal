@@ -11,6 +11,7 @@ public class TankyDroid extends Droid {
         this.setBatteryLife(60);
         this.setDroidName("TankyDroid");
         this.shield=100;
+        heal();
     }
 
     @Override
@@ -19,7 +20,7 @@ public class TankyDroid extends Droid {
     }
 
     public void heal(){
-        this.setBatteryLife(this.getBatteryLife()+25);
+        setSuperPower(new HealPower());
     }
 
 }

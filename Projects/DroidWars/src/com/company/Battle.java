@@ -3,7 +3,12 @@
 package com.company;
 
 public class Battle {
+
     public boolean warOfTwoDroids(Droid droid1, Droid droid2){
+        droid1.useSuperPower(droid2);
+        droid2.useSuperPower(droid1);
+        droid1.fly();
+        droid2.fly();
         int strengthDelta = droid1.getStrength() - droid2.getStrength();
         int batteryLifeDelta = droid1.getBatteryLife() - droid2.getBatteryLife();
         int velocityDelta = droid1.getVelocity() - droid2.getVelocity();
@@ -29,7 +34,7 @@ public class Battle {
         }
 
         // отримання результату
-        return scoreDroid1>scoreDroid2;
+        return scoreDroid1 > scoreDroid2;
         }
     }
 
