@@ -1,6 +1,6 @@
 package com.company.model;
 
-import com.company.view.InvalidUsernameEcxeption;
+import com.company.view.InvalidUsernameException;
 
 import java.io.*;
 
@@ -46,14 +46,14 @@ public class User implements Serializable {
         this.role = role;
     }
 
-    public void addUser() throws InvalidUsernameEcxeption {
+    public void addUser() throws InvalidUsernameException {
         User user = new User(userName, password, role);
         String fileName = userName.concat(".ser");
         File userProfile = new File("./users/" + fileName);
         users.mkdir();
 
         if (userProfile.exists()) {
-            throw new InvalidUsernameEcxeption();
+            throw new InvalidUsernameException();
         }
         try (FileOutputStream outputStream = new FileOutputStream("./users/" + fileName);
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
