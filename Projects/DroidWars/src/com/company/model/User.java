@@ -1,7 +1,6 @@
 package com.company.model;
 
 import com.company.view.InvalidUsernameEcxeption;
-import com.company.strategy.Role;
 
 import java.io.*;
 

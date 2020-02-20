@@ -1,4 +1,4 @@
-package com.company.strategy;
+package com.company.model;
 
 public enum Role {
     ADMINISTRATOR,
