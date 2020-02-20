@@ -85,11 +85,34 @@ public class Droid {
         return Objects.hash(droidName);
     }
 
-    public void displayInfo(){
-        System.out.println("Droid name is:" + this.getDroidName());
-        System.out.println("Strength: " + this.getStrength());
-        System.out.println("Velocity: " + this.getVelocity());
-        System.out.println("Battery Life: " + this.getBatteryLife());
-        System.out.println(" ");
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: ").append(this.getDroidName()).append(" ; ");
+        sb.append("Strength: ").append(this.getStrength()).append(" ; ");
+        sb.append("Velocity: ").append(this.getVelocity()).append(" ; ");
+        sb.append("Battery Life: ").append(this.getBatteryLife()).append(" ; ");
+        return sb.toString();
     };
+
+    public static class Engine {
+        String version = "v0.6";
+        int energy = 25;
+
+        public String getVersion() {
+            return version;
+        }
+
+        public void setVersion(String version) {
+            this.version = version;
+        }
+
+        public int getEnergy() {
+            return energy;
+        }
+
+        public void setEnergy(int energy) {
+            this.energy = energy;
+        }
+    }
 }
