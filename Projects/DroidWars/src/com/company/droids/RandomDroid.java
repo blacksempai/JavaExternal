@@ -4,7 +4,7 @@ package com.company.droids;
 import com.company.strategy.Fly;
 
 import java.util.Random;
-
+//Should be fixed because causes exception situations
 public class RandomDroid extends Droid {
     Random randomEngine = new Random();
 
