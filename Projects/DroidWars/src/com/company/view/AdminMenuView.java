@@ -28,7 +28,7 @@ public class AdminMenuView {
     protected final static String NO_DROIDS_TO_CHANGE_MSG = "No droids to change ";
     protected final static String EXIT_MSG = "EXIT - 6 ";
 
-    public void getMsg(String str){
+    public void sendMsg(String str){
         System.out.println(str);
     }
 

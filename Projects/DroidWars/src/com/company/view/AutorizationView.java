@@ -14,12 +14,16 @@ public class AutorizationView {
     protected static final String VALID_USERNAME_REQUIREMENTS_MSG = "Username has to only containt letters or digits";
     protected static final String VALID_PASSWORD_REQUIREMENTS_MSG = "Password should be > 6 symbols and contain at least 1 number and 1 lower and uppercase latin letter";
     protected static final String REGISTRATION_MSG = "Registration successful";
+    protected static final String REGISTRATION_FAILED_MSG = "Registration failed";
     protected static final String EXIT_MSG = "You have quit. Good bye!!!";
     protected static final String USER_EXIST_MSG = "User already exists, please try another name. ";
 
 
-    public void getMsg(String  str){
+    public void sendMsg(String  str){
         System.out.println(str);
+    }
+    public void sendError(String  str){
+        System.err.println(str);
     }
 
 }

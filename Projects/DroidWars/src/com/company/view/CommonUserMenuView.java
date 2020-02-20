@@ -14,7 +14,7 @@ public class CommonUserMenuView {
     protected final static String EXIT_MSG = "EXIT - 2";
     protected final static String NO_DROIDS_MSG = "There is only one droid, or no droids at all. You can't bet.";
 
-    public void getMsg(String str){
+    public void sendMsg(String str){
         System.out.println(str);
     }
 

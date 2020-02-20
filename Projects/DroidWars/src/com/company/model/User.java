@@ -51,10 +51,8 @@ public class User implements Serializable {
         User user = new User(userName, password, role);
         String fileName = userName.concat(".ser");
         File userProfile = new File("./users/" + fileName);
-        if (users.exists()) {
-        } else {
-            users.mkdir();
-        }
+        users.mkdir();
+
         if (userProfile.exists()) {
             throw new InvalidUsernameEcxeption();
         }

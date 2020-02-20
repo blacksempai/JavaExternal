@@ -1,5 +1,5 @@
 /** @author: Andriy Moskalenko */
-package com.company.model;
+package com.company.junk;
 
 import com.company.droids.Droid;
 import com.company.model.DroidTypes;
@@ -9,12 +9,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class DroidConsoleView {
-
-    protected final static String HIT_MSG = " decreased life to : ";
-    protected final static String TO_MSG = " to this droid ";
-    protected final static String AVOID_MSG = " Avoided attack ";
-    protected final static String ROUND_MSG = "In round :  ";
-    protected final static String DRAW_MSG = "Its' draw";
 
     public void printResults(boolean result, Droid droid1, Droid droid2){
         if (result){

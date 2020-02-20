@@ -1,8 +1,10 @@
 /** @author: Andriy Moskalenko */
-package com.company.model;
+package com.company.junk;
 
 import com.company.droids.Droid;
 import com.company.junk.Battle;
+import com.company.model.DroidFactory;
+import com.company.model.DroidTypes;
 
 public class DroidModel {
     DroidFactory factory;

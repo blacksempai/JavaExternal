@@ -38,19 +38,19 @@ public class AdminMenu {
                         break;
                     }
                     case "2": {
-                        adminMenuView.getMsg(adminMenuView.WHICH_TO_DELETE_MSG);
+                        adminMenuView.sendMsg(adminMenuView.WHICH_TO_DELETE_MSG);
                         droidDeleted = deleteDroid(selectFromTwoDroids());
                         run();
                         break;
                     }
                     case "3": {
-                        adminMenuView.getMsg(adminMenuView.WHICH_TO_CHANGE_MSG);
+                        adminMenuView.sendMsg(adminMenuView.WHICH_TO_CHANGE_MSG);
                         changeDroid(selectFromTwoDroids());
                         run();
                         break;
                     }
                     case "4": {
-                        adminMenuView.getMsg(adminMenuView.WHICH_TO_ADD_MSG);
+                        adminMenuView.sendMsg(adminMenuView.WHICH_TO_ADD_MSG);
                         droidAdded = addDroid();
                         run();
                         break;
@@ -65,7 +65,7 @@ public class AdminMenu {
                         return;
                     }
                     default: {
-                        adminMenuView.getMsg(adminMenuView.INVALID_CHOICE_MSG);
+                        adminMenuView.sendMsg(adminMenuView.INVALID_CHOICE_MSG);
                         break;
                     }
                 }
@@ -77,16 +77,16 @@ public class AdminMenu {
     }
 
     private void lookOnTheBattlefield() {
-        adminMenuView.getMsg(adminMenuView.DROIDS_ON_BATTLE_MSG);
+        adminMenuView.sendMsg(adminMenuView.DROIDS_ON_BATTLE_MSG);
         if (battleField.getDroid1() != null) {
             System.out.println(battleField.getDroid1().getDroidName());
         } else {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
         }
         if (battleField.getDroid2() != null) {
             System.out.println(battleField.getDroid2().getDroidName());
         } else {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
         }
     }
 
@@ -115,7 +115,7 @@ public class AdminMenu {
             number = selectFromTwoDroids();
         }
         if (number == -1) {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_TO_CHANGE_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_TO_CHANGE_MSG);
             return;
         }
         switch (number) {
@@ -131,13 +131,13 @@ public class AdminMenu {
                 break;
 
         }
-        adminMenuView.getMsg(adminMenuView.WHICH_TO_ADD_MSG);
+        adminMenuView.sendMsg(adminMenuView.WHICH_TO_ADD_MSG);
         addDroid();
     }
 
     private boolean deleteDroid(int number) {
         if (number == -1) {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_TO_DELETE_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_TO_DELETE_MSG);
             return false;
         }
         while (number == 0) {
@@ -147,36 +147,37 @@ public class AdminMenu {
         switch (number) {
             case 1: {
                 battleField.setDroid1(null);
-                adminMenuView.getMsg(adminMenuView.DELETED_SUCCESSFULLY_MSG);
+                adminMenuView.sendMsg(adminMenuView.DELETED_SUCCESSFULLY_MSG);
                 return true;
 
             }
             case 2: {
                 battleField.setDroid2(null);
-                adminMenuView.getMsg(adminMenuView.DELETED_SUCCESSFULLY_MSG);
+                adminMenuView.sendMsg(adminMenuView.DELETED_SUCCESSFULLY_MSG);
                 return true;
             }
             default: {
-                adminMenuView.getMsg(adminMenuView.INVALID_CHOICE_MSG);
+                adminMenuView.sendMsg(adminMenuView.INVALID_CHOICE_MSG);
                 return false;
             }
         }
     }
 
     private void makeBattle() {
-        adminMenuView.getMsg(adminMenuView.СHOOSE_FIRST_DROID_FOR_ADDING_MSG);
+        adminMenuView.sendMsg(adminMenuView.СHOOSE_FIRST_DROID_FOR_ADDING_MSG);
         int droid = 0;
         while (droid == 0) {
             droid = adminMenuView.getDroids();
             battleField.setDroid1(addDroidByNumber(droid));
         }
-        adminMenuView.getMsg(adminMenuView.СHOOSE_SECOND_DROID_FOR_ADDING_MSG);
+        adminMenuView.sendMsg(adminMenuView.СHOOSE_SECOND_DROID_FOR_ADDING_MSG);
         droid = 0;
         while (droid == 0) {
             droid = adminMenuView.getDroids();
             battleField.setDroid2(addDroidByNumber(droid));
         }
-        System.out.println(adminMenuView.WINNER_MSG + battleField.fight().getDroidName());
+        adminMenuView.sendMsg(battleField.fight());
+        adminMenuView.sendMsg(adminMenuView.WINNER_MSG + battleField.getWinner().getDroidName());
     }
 
     private Droid addDroidByNumber(int numb) {
@@ -197,7 +198,7 @@ public class AdminMenu {
                 return droidFactory.getDroid(DroidTypes.TANKY);
             }
             default: {
-                adminMenuView.getMsg(adminMenuView.INVALID_CHOICE_MSG);
+                adminMenuView.sendMsg(adminMenuView.INVALID_CHOICE_MSG);
                 return null;
             }
         }
@@ -206,12 +207,12 @@ public class AdminMenu {
 
     public int selectFromTwoDroids() {
         if (battleField.getDroid1() == null) {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
         } else {
             System.out.println(battleField.getDroid1().getDroidName() + " - 1");
         }
         if (battleField.getDroid2() == null) {
-            adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+            adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
         } else {
             System.out.println(battleField.getDroid2().getDroidName() + " - 2");
         }
@@ -223,14 +224,14 @@ public class AdminMenu {
             switch (choice) {
                 case "1": {
                     if (battleField.getDroid1() == null) {
-                        adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+                        adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
                     } else {
                         return 1;
                     }
                 }
                 case "2": {
                     if (battleField.getDroid2() == null) {
-                        adminMenuView.getMsg(adminMenuView.NO_DROIDS_MSG);
+                        adminMenuView.sendMsg(adminMenuView.NO_DROIDS_MSG);
                     } else {
                         return 2;
                     }
