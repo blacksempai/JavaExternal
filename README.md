@@ -13,8 +13,12 @@
 * [Guessing game](https://github.com/blacksempai/JavaExternal/tree/master/Projects/GuessingGame)
 
 #### Task 3:
-* [Figures with MVC pattern](#)
 * [Droid WAR](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
+   ** [v0.2](https://github.com/blacksempai/JavaExternal/tree/mvc/Projects/DroidWars)
+   ** [v0.3](https://github.com/blacksempai/JavaExternal/tree/strategy/Projects/DroidWars)
+   ** [v0.5](https://github.com/blacksempai/JavaExternal/tree/jUnit/Projects/DroidWars)
+   ** [v0.6](https://github.com/blacksempai/JavaExternal/tree/v06/Projects/DroidWars)
+   ** [v0.7](https://github.com/blacksempai/JavaExternal/tree/Serialize/Projects/DroidWars)
 
 ## About
 Repository for java external courses.

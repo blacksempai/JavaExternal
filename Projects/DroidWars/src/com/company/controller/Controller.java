@@ -128,8 +128,8 @@ public class Controller {
             try {
                 user.addUser();
                 userCreated = true;
-            } catch (InvalidUsernameEcxeption invalidUsernameEcxeption) {
-                invalidUsernameEcxeption.getMessage();
+            } catch (InvalidUsernameException invalidUsernameException) {
+                invalidUsernameException.getMessage();
                 authorizationView.sendError(resourceBundle.getString(authorizationView.REGISTRATION_FAILED_MSG));
                 authorizationView.sendMsg(resourceBundle.getString(authorizationView.USER_EXIST_MSG));
             }
