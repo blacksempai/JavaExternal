@@ -14,6 +14,7 @@
 
 #### Task 3:
 * [Droid WAR](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
+   * [v0.1](https://github.com/blacksempai/JavaExternal/tree/98fccf0df15d4e3db1ee1d3f642e40b8d6522bb1/Projects/DroidWars)
    * [v0.2](https://github.com/blacksempai/JavaExternal/tree/mvc/Projects/DroidWars)
    * [v0.3](https://github.com/blacksempai/JavaExternal/tree/strategy/Projects/DroidWars)
    * [v0.4](https://github.com/blacksempai/JavaExternal/tree/8878f75e9f35789c3615653423bb44e40ac9f015/Projects/DroidWars)
