@@ -14,13 +14,12 @@
 
 #### Task 3:
 * [Droid WAR](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
-  ```
    * [v0.2](https://github.com/blacksempai/JavaExternal/tree/mvc/Projects/DroidWars)
    * [v0.3](https://github.com/blacksempai/JavaExternal/tree/strategy/Projects/DroidWars)
    * [v0.5](https://github.com/blacksempai/JavaExternal/tree/jUnit/Projects/DroidWars/src/com/company/helper)
    * [v0.6](https://github.com/blacksempai/JavaExternal/blob/v06/Projects/DroidWars/src/com/company/helper/HelperMain.java)
    * [v0.7](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
-   ```
+
 
 ## About
 Repository for java external courses.
