@@ -6,9 +6,10 @@ import com.company.strategy.Flyable;
 import com.company.strategy.NoSuperPower;
 import com.company.strategy.SuperPower;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Droid {
+public class Droid implements Serializable {
     private int strength;
     private int velocity;
     private int batteryLife;
@@ -95,6 +96,11 @@ public class Droid {
         return sb.toString();
     };
 
+    public String toString2(){
+        return this.getDroidName() + "," + this.getStrength() + "," +
+                this.getVelocity() + "," + this.getBatteryLife();
+    }
+
     public static class Engine {
         String version = "v0.6";
         int energy = 25;
@@ -114,5 +120,13 @@ public class Droid {
         public void setEnergy(int energy) {
             this.energy = energy;
         }
+    }
+
+    public void displayInfo(){
+        System.out.println("Droid name is:" + this.getDroidName());
+        System.out.println("Strength: " + this.getStrength());
+        System.out.println("Velocity: " + this.getVelocity());
+        System.out.println("Battery Life: " + this.getBatteryLife());
+        System.out.println(" ");
     }
 }

@@ -3,7 +3,9 @@ package com.company.strategy;
 
 import com.company.droids.Droid;
 
-public class NoSuperPower implements SuperPower {
+import java.io.Serializable;
+
+public class NoSuperPower implements SuperPower, Serializable {
     @Override
     public void useSuperPower(Droid thisDroid, Droid enemy) {
 

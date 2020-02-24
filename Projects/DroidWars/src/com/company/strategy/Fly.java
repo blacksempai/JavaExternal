@@ -3,7 +3,9 @@ package com.company.strategy;
 
 import com.company.droids.Droid;
 
-public class Fly implements Flyable {
+import java.io.Serializable;
+
+public class Fly implements Flyable, Serializable {
     @Override
     public void fly(Droid thisDroid) {
         if(thisDroid.getBatteryLife()>5) {

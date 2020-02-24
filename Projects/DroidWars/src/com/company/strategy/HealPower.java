@@ -3,7 +3,9 @@ package com.company.strategy;
 
 import com.company.droids.Droid;
 
-public class HealPower implements SuperPower {
+import java.io.Serializable;
+
+public class HealPower implements SuperPower, Serializable {
     @Override
     public void useSuperPower(Droid thisDroid, Droid enemy) {
         thisDroid.setBatteryLife(thisDroid.getBatteryLife()+25);
