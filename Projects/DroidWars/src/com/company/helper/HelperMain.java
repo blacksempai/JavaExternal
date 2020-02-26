@@ -59,6 +59,7 @@ public class HelperMain {
 
         Droid [] ArraylistOfDroids = {new TankyDroid(),new OnePunchDroid(),new SpeedyDroid()};
         RWDroids.writeToFile(ArraylistOfDroids);
-        RWDroids.readFromFileDroids();
+        //RWDroids.readFromFileDroids();
+        RWDroids.DisplayReadedDroidsFromFile();
     }
 }
