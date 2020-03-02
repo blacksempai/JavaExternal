@@ -6,7 +6,7 @@ public class GuessingGameModel {
     private int userMinGuess = 0;
     private int userMaxGuess = 100;
     private int counter = 0;
-    private ArrayList<Integer> previousTries = new ArrayList<Integer>();
+    private ArrayList<Integer> previousTries = new ArrayList<>();
     private Random random = new Random();
 
     public GuessingGameModel() {

@@ -7,9 +7,16 @@ public class GuessingGameController {
         this.view = view;
     }
 
+    public void session(){
+        while(true){
+            if(gameIteration()) System.exit(0);
+            else resetGame();
+        }
+    }
+
     public boolean gameIteration(){
         int userNumber = view.requestNumber();
-        if (userNumber>model.getUserMaxGuess()||userNumber<model.getUserMinGuess()){
+        while (userNumber>model.getUserMaxGuess()||userNumber<model.getUserMinGuess()){
             view.printRangeError(model.getUserMinGuess(),model.getUserMaxGuess());
             userNumber = view.requestNumber();
         }
