@@ -15,9 +15,11 @@ public class GuessingGameView {
             System.out.println(number);
             return number;
         }
+        catch (NumberFormatException e){
+            return requestNumber();
+        }
         catch (IOException e){
-            System.out.println("In catch block.");
-            return -1;
+            return requestNumber();
         }
     }
 
