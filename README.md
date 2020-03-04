@@ -22,6 +22,12 @@
    * [v0.6](https://github.com/blacksempai/JavaExternal/blob/v06/Projects/DroidWars/src/com/company/helper/HelperMain.java)
    * [v0.7](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
 
+#### Task 4:
+* [Shakespeare](/tree/master/Projects/ShakespeareSonnets/src/main/java/ProgramHash.java)
+
+#### Task 5:
+* [OpenWeather](/tree/master/Projects/OpenWeather/src/main/java)
+
 ## About
 Repository for java external courses.
 ФІО: Москаленко Андрій Миколайович
