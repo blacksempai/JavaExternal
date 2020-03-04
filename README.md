@@ -23,10 +23,10 @@
    * [v0.7](https://github.com/blacksempai/JavaExternal/tree/master/Projects/DroidWars)
 
 #### Task 4:
-* [Shakespeare](/tree/master/Projects/ShakespeareSonnets/src/main/java/ProgramHash.java)
+* [Shakespeare](/Projects/ShakespeareSonnets/src/main/java/ProgramHash.java)
 
 #### Task 5:
-* [OpenWeather](/tree/master/Projects/OpenWeather/src/main/java)
+* [OpenWeather](/Projects/OpenWeather/src/main/java)
 
 ## About
 Repository for java external courses.
