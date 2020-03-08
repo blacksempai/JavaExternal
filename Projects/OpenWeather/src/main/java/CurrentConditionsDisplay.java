@@ -9,13 +9,18 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     @Override
     public void update(double temperature, int humidity, int pressure) {
-        this.temperature = temperature;
+        this.temperature = convertKtoF(temperature);
         this.humidity = humidity;
         display();
     }
 
     @Override
     public void display() {
-        System.out.println("Current conditions: "+temperature+"F degrees and "+humidity+"% humidity");
+        String formattedTemp = String.format("%.2f", temperature);
+        System.out.println("Current conditions: "+formattedTemp+"F degrees and "+humidity+"% humidity");
+    }
+
+    private double convertKtoF(double temperatureInK){
+        return (temperatureInK-32)*5/9;
     }
 }

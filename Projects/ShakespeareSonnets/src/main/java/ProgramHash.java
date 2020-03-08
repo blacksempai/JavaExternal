@@ -97,6 +97,10 @@ public class ProgramHash {
         System.out.println("Choose a word from list");
         System.out.println(m.keySet());
         String userInput = br.readLine();
-        System.out.println(m.get(userInput));
+        m.get(userInput).entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .forEach(System.out::println);
+
+
     }
 }
