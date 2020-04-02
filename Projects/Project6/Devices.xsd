@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="devices" type="devicesType"/>
+  <xs:complexType name="typeType">
+    <xs:sequence>
+      <xs:element name="peripheral" type="xs:boolean"/>
+      <xs:element type="xs:float" name="power"/>
+      <xs:element name="group">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="IO"/>
+            <xs:enumeration value="Memory"/>
+            <xs:enumeration value="Main"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="port">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="USB"/>
+            <xs:enumeration value="SATA"/>
+            <xs:enumeration value="COM"/>
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="LPT"/>
+            <xs:enumeration value="AM4"/>
+            <xs:enumeration value="PCI"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deviceType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element name="origin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Germany"/>
+            <xs:enumeration value="China"/>
+            <xs:enumeration value="America"/>
+            <xs:enumeration value="Korea"/>
+            <xs:enumeration value="Italy"/>
+            <xs:enumeration value="Kazahstan"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:short" name="price"/>
+      <xs:element type="typeType" name="type"/>
+      <xs:element name="critical" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="devicesType">
+    <xs:sequence>
+      <xs:element type="deviceType" name="device" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

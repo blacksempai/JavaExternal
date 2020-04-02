@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="Devices.xsl" type="text/xsl"?>
+<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Devices.xsd">
+    <device>
+        <name>Raizar Mouse</name>
+        <origin>Germany</origin>
+        <price>949</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>0.5</power>
+            <group>IO</group>
+            <port>USB</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>LogiTeth Mouse</name>
+        <origin>China</origin>
+        <price>500</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>0.5</power>
+            <group>IO</group>
+            <port>USB</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>ASIS Keyboard</name>
+        <origin>China</origin>
+        <price>900</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>0.6</power>
+            <group>IO</group>
+            <port>USB</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>Hooli WebCam</name>
+        <origin>America</origin>
+        <price>1200</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>1.0</power>
+            <group>IO</group>
+            <port>USB</port>
+        </type>
+        <critical>false</critical>
+    </device>
+    <device>
+        <name>Soviet HDD</name>
+        <origin>Korea</origin>
+        <price>2100</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>4.0</power>
+            <group>Memory</group>
+            <port>SATA</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>Fast SDD</name>
+        <origin>Italy</origin>
+        <price>2500</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>2.2</power>
+            <group>Memory</group>
+            <port>SATA</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>nFast SDD</name>
+        <origin>China</origin>
+        <price>1500</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>2.5</power>
+            <group>Memory</group>
+            <port>SATA</port>
+        </type>
+        <critical>true</critical>
+    </device>
+        <device>
+        <name>LGB Display</name>
+        <origin>Kazahstan</origin>
+        <price>3400</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>20</power>
+            <group>IO</group>
+            <port>COM</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>MC Dinalds Screen</name>
+        <origin>China</origin>
+        <price>2500</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>25</power>
+            <group>IO</group>
+            <port>COM</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>Motherboard</name>
+        <origin>China</origin>
+        <price>3250</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>30</power>
+            <group>Main</group>
+            <port>None</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>Canun Scaner</name>
+        <origin>China</origin>
+        <price>4000</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>140</power>
+            <group>IO</group>
+            <port>LPT</port>
+        </type>
+        <critical>false</critical>
+    </device>
+    <device>
+        <name>Canun Printer</name>
+        <origin>China</origin>
+        <price>3500</price>
+        <type>
+            <peripheral>true</peripheral>
+            <power>235</power>
+            <group>IO</group>
+            <port>LPT</port>
+        </type>
+        <critical>false</critical>
+    </device>
+    <device>
+        <name>Indel Processor</name>
+        <origin>America</origin>
+        <price>4200</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>140</power>
+            <group>Main</group>
+            <port>AM4</port>
+        </type>
+        <critical>true</critical>
+    </device>
+    <device>
+        <name>Mvidia Graphic Card</name>
+        <origin>China</origin>
+        <price>5199</price>
+        <type>
+            <peripheral>false</peripheral>
+            <power>55</power>
+            <group>Main</group>
+            <port>PCI</port>
+        </type>
+        <critical>true</critical>
+    </device>
+</devices>
+
+
